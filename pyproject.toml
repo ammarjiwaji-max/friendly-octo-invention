@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "financial-news-bot"
+version = "1.0.0"
+description = "Daily financial news email bot"
+authors = ["ammarjiwaji-max"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+python-dotenv = "^1.0.0"
+apscheduler = "^3.10.4"
+pytz = "^2024.1"
+gunicorn = "^21.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

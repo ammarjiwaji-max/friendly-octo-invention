@@ -1,0 +1,34 @@
+{
+  "name": "financial-news-bot",
+  "description": "Daily financial news email bot",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "EMAIL_SENDER": {
+      "description": "Your Gmail address",
+      "required": true
+    },
+    "EMAIL_PASSWORD": {
+      "description": "Gmail App Password (16 characters)",
+      "required": true
+    },
+    "EMAIL_RECIPIENT": {
+      "description": "Recipient email address",
+      "required": true,
+      "value": "ammar.jiwaji@gmail.com"
+    },
+    "BOT_SCHEDULE_TIME": {
+      "description": "Schedule time in HH:MM format",
+      "required": true,
+      "value": "06:00"
+    },
+    "TIMEZONE": {
+      "description": "Timezone for scheduling",
+      "required": true,
+      "value": "Africa/Dar_es_Salaam"
+    }
+  }
+}
